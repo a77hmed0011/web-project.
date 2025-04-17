@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="shortcut icon" href="image/cm.jpg" type="image/x-icon">
+    <title>VM-Resturant - Home</title>
+</head>
+
+<body>
+
+    <p id="home"></p> <!--   اختصار للهوم  -->
+
+    <nav class="navbar">
+        <div class="nav-cont">
+
+            <div class="logo">VM-Resturant</div>
+
+            <ul class="links">
+                <!-- <li><a href="#home">Home</a></li> -->
+                <li><a href="#list">List Food</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+
+
+                <li><a href="detals.html">About-Us</a></li>
+
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="about-container">
+
+        <div class="about-content">
+
+            <div class="about-video">
+
+                <Video width="100%" controls poster="image/food.jpg" loop muted>
+                    <source src="video/v2.mp4" type="video/mp4" title="Restaurant View">
+                </Video>
+            </div>
+
+            <div class="about-text">
+
+
+
+
+                <div class="name">
+                    <p>VM Restaurant</p>
+                </div>
+                <p>
+                    <b>
+                        تجربة طعام استثنائية حيث الابتكار يلتقي بالذوق الرفيع
+
+                    </b>
+                </p>
+
+                ، نقدم لكم رحلة تذوق فريدة تخلط بين الوصفات العالمية والتقنيات الحديثة. كل طبق عندنا هو عمل فني،
+                مصمم بعناية من قبل طهاة مبدعين يستخدمون أفضل المكونات الموسمية الطازجة
+
+                </p>
+
+                تأسس المطعم عام 2025 ومنذ ذلك الحين ونحن نلتزم بأعلى معايير الجودة والنظافة، باستخدام أفضل المكونات
+                الطازجة التي يتم اختيارها بعناية
+                </p>
+
+                <p>فريقنا من الطهاة المحترفين يعملون باجتهاد لتقديم تجربة طعام استثنائية لكل زائر.</p>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <br><br><br><br>
+
+
+
+    <div class="about-photo">
+
+        <h2 class="phototitel"> Photo Gallery</h2>
+
+        <div class="gallery">
+
+            <div class="image-container">
+                <img src="image/nav.jpg" title=" فيو المطعم">
+            </div>
+
+            <div class="image-container">
+                <img src="image/pizza2.jpg" title=" احد اطباقنا">
+            </div>
+
+            <div class="image-container">
+                <img src="image/ic2.jpg" title="الحلويات">
+            </div>
+        </div>
+        <br><br>
+
+    </div>
+
+
+
+
+
+    <p id="list"></p>
+    <!-- list shortcat  -->
+
+
+
+    <div class="bodymun">
+
+        <h2 class="listtitel"> List Food </h2>
+
+        <div class="category-tabs">
+            <button class="category-btn active" onclick="filterMenu('main')">الوجبات الرئيسية</button>
+            <button class="category-btn " onclick="filterMenu('all')">الكل</button>
+            <button class="category-btn" onclick="filterMenu('appetizers')">المقبلات</button>
+            <button class="category-btn" onclick="filterMenu('drinks')">المشروبات</button>
+            <button class="category-btn" onclick="filterMenu('desserts')">الحلويات</button>
+        </div>
+
+        <div class="menu-cont">
+            <!-- قسم الوجبات الرئيسية -->
+            <div class="menu-category active" id="main">
+                <div class="menu-item">
+                    <img src="image/p1.jpg" alt="برجر لحم">
+                    <div class="item-info">
+                        <h3>برجر لحم</h3>
+                        <p> قطع لحم بقري مشوية مع صلصة </p>
+                        <span class="price">155 L.E</span>
+
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="image/p2.jpg" alt=" ">
+                    <div class="item-info">
+                        <h3>برجر البرج</h3>
+                        <p> برجر لحم مع خس و مع صلصة الباربكيو</p>
+                        <span class="price"> 225 L.E </span>
+
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="image/p3.jpg" alt=" ">
+                    <div class="item-info">
+                        <h3>برجر </h3>
+                        <p> مع صلصة وبطاطس و كريمية </p>
+                        <span class="price">125 L.E</span>
+
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="image/c.jpg" alt=" ">
+                    <div class="item-info">
+                        <h3>شاورما </h3>
+                        <p>شاورما لحم </p>
+                        <span class="price">45 L.E</span>
+
+                    </div>
+                </div>
+
+            </div>
+            <br>
+            <!-- قسم المقبلات -->
+            <div class="menu-category" id="appetizers">
+                <div class="menu-item">
+                    <img src="image/s1.jpg" alt="سلطة سيزر">
+                    <div class="item-info">
+                        <h3>سلطة </h3>
+                        <p>خس روماني مع كروتون وصلصة </p>
+                        <span class="price">45 L.E</span>
+
+                    </div>
+                </div>
+
+
+
+                <div class="menu-item">
+                    <img src="image/s2.jpg" alt="سلطه ">
+                    <div class="item-info">
+                        <h3>مكس سلطه</h3>
+                        <p>بطيخ ونعناع ومش عارف الباقي</p>
+                        <span class="price">45 L.E</span>
+
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="image/s3.jpg">
+                    <div class="item-info">
+                        <h3>سلطه فاكهه</h3>
+                        <p>قطعم من الكيوي والتوت والفراوله الطازجه</p>
+                        <span class="price">75 L.E</span>
+
+                    </div>
+                </div>
+
+
+                <div class="menu-item">
+                    <img src="image/hood.jpg" alt="حودا">
+                    <div class="item-info">
+                        <h3>محمود صاحبنا</h3>
+                        <p>شاب مطيع ومخلص </p>
+                        <span class="price">450 L.E</span>
+                    </div>
+                </div>
+
+
+            </div>
+            <br>
+            <!-- قسم المشروبات -->
+            <div class="menu-category" id="drinks">
+                <div class="menu-item">
+                    <img src="image/orn.jpg" alt=" ">
+                    <div class="item-info">
+                        <h3>عصيرالبرتقال </h3>
+                        <p>عصير برتقال فرش منعش</p>
+                        <span class="price">35 L.E</span>
+
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="image/fra.jpg" alt="عصير فراولة">
+                    <div class="item-info">
+                        <h3>عصير فراولة</h3>
+                        <p>طبيعي بدون إضافات صناعية</p>
+                        <span class="price">35 L.E</span>
+
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="image/fra3.jpg" alt="قهوة عربية">
+                    <div class="item-info">
+                        <h3>قهوة عربية</h3>
+                        <p>بالهيل والزعفران</p>
+                        <span class="price">25 L.E</span>
+
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="image/fra1.jpg" alt="مشروب سموثي أفوكاد وكاكاو">
+                    <div class="item-info">
+                        <h3>مشروب سموثي أفوكادو</h3>
+                        <p>مع الموز والكاكاو والعسل</p>
+                        <span class="price">75 L.E</span>
+
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="image/fra2.jpg" alt=" عصير مانجو">
+                    <div class="item-info">
+                        <h3>عصير مانجو</h3>
+                        <p>فرش ومنعش %100</p>
+                        <span class="price">35 L.E</span>
+
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- قسم الحلويات -->
+            <div class="menu-category" id="desserts">
+                <div class="menu-item">
+                    <img src="image/cakf.jpg" alt="تشيز كيك">
+                    <div class="item-info">
+                        <h3>تشيز كيك بالفراوله</h3>
+                        <p>ةمع طبقة فراوله طازج</p>
+                        <span class="price">45 L.E</span>
+
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="image/caksh.jpg" alt="تشيز كيك شوكولاتة">
+                    <div class="item-info">
+                        <h3>بال كيك شوكولاتة</h3>
+                        <p> مع كريمة فانيليا</p>
+                        <span class="price">45 L.E</span>
+
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="image/ic2.jpg" alt=" آيس كريم">
+                    <div class="item-info">
+                        <h3>ايس كريم</h3>
+                        <p>مع عسل وكرز</p>
+                        <span class="price">65 L.E</span>
+
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="image/ic.jpg" alt="آيس كريم">
+                    <div class="item-info">
+                        <h3>آيس كريم منزلي</h3>
+                        <p>3 نكهات (فانيليا، شوكولاتة، فراولة)</p>
+                        <span class="price">55 L.E</span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function filterMenu(category) {
+            // إخفاء جميع الأقسام
+            document.querySelectorAll('.menu-category').forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // إزالة التنشيط من جميع الأزرار
+            document.querySelectorAll('.category-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // تنشيط الزر المحدد
+            event.currentTarget.classList.add('active');
+
+            // إظهار القسم المحدد
+            if (category === 'all') {
+                document.querySelectorAll('.menu-category').forEach(section => {
+                    section.classList.add('active');
+                });
+            } else {
+                document.getElementById(category).classList.add('active');
+            }
+
+            // التمرير إلى الأعلى داخل حاوية القائمة
+            document.querySelector('.menu-cont').scrollTop = 0;
+        }
+    </script>
+    <br><br>
+
+
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br>
+
+
+    <p id="contact"></p>
+
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-section">
+
+                <h4>VM-resturant</h4>
+                <p>" We offer you the best dining experience at affordable prices for everyone "</p>
+            </div>
+
+            <div class="footer-section">
+
+                <h4>Contact Us</h4>
+                <p>Phone: 01029222933</p>
+                <p>Email: info@VM-restaurant.com</p>
+                <p>Address: الاسماعيلية - جامعه قناه السويس - بجوار مبنى رعايه الشباب</p>
+
+            </div>
+
+
+            <div class="footer-section">
+                <h4>Quik links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#list">List food</a></li>
+                    <li><a href="detals.html">About-Us</a></li>
+                    <li><a href="#">Contact-Us</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-section">
+
+                <h4>Follow Us</h4>
+
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/1E9394icYe/?mibextid=wwXIfr"><img
+                            src="image/facebook-icon.png" alt="فيسبوك"></a>
+
+                    <!-- <img src="image/qrcode.png" alt="Qr code" > -->
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+        <div class="copyright">
+            <p>جميع الحقوق محفوظة <br>
+                &copy; 2023 VM-resturant </p>
+        </div>
+
+
+    </footer>
+
+
+
+
+</body>
+
+</html>
