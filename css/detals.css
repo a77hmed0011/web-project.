@@ -108,3 +108,15 @@ body {
     cursor: pointer;
 
 }
+
+
+ /* إخفاء الصور الافتراضية */
+ .more-images {
+     display: none;
+ }
+
+ .more-images.show {
+     display: block;
+ }
+
+
