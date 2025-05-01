@@ -56,7 +56,29 @@
 
     </div>
 
+ <script>
+        // التحقق من كلمة المرور فقط واهتزاز الحقل إذا كانت غير صالحة
+        document.querySelector("form").addEventListener("submit", function (e) {
+            e.preventDefault(); // منع الإرسال الافتراضي
 
+            const passwordInput = document.getElementById("password");
+            const passwordValue = passwordInput.value;
+
+            const hasLetter = /[a-zA-Z]/.test(passwordValue);
+            const hasNumber = /[0-9]/.test(passwordValue);
+
+            if (!hasLetter || !hasNumber) {
+                passwordInput.classList.add("shake");
+                setTimeout(() => {
+                    passwordInput.classList.remove("shake");
+                }, 300);
+                return;
+            }
+
+            // هنا يتم إرسال البيانات أو إظهار رسالة نجاح تجريبية
+            alert("تم التحقق من كلمة المرور بنجاح.");
+        });
+    </script>
 
 </body>
 
