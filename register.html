@@ -74,7 +74,64 @@
     </div>
 
 
+<script>
+        const form = document.getElementById("registerForm");
 
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            let valid = true;
+
+            const fname = document.getElementById("fname");
+            const lname = document.getElementById("lname");
+            const phoneInput = document.getElementById("phone");
+            const passwordInput = document.getElementById("password");
+            const confirmInput = document.getElementById("confirm-password");
+
+            // الاسم الأول والتاني لازم يكون 3 حروف أو أكتر
+            if (fname.value.trim().length < 3) {
+                shakeInput(fname);
+                valid = false;
+            }
+
+            if (lname.value.trim().length < 3) {
+                shakeInput(lname);
+                valid = false;
+            }
+
+            // رقم الهاتف 11 رقم
+            if (!/^\d{11}$/.test(phoneInput.value.trim())) {
+                shakeInput(phoneInput);
+                valid = false;
+            }
+
+            // الباسورد فيها حروف وأرقام
+            const passwordValue = passwordInput.value;
+            const hasLetter = /[a-zA-Z]/.test(passwordValue);
+            const hasNumber = /[0-9]/.test(passwordValue);
+            if (!hasLetter || !hasNumber) {
+                shakeInput(passwordInput);
+                valid = false;
+            }
+
+            // تأكيد كلمة السر يطابقها
+            if (passwordValue !== confirmInput.value) {
+                shakeInput(confirmInput);
+                valid = false;
+            }
+
+            if (valid) {
+                alert("تم إنشاء الحساب بنجاح ✅");
+            }
+        });
+
+        function shakeInput(input) {
+            input.classList.add("shake");
+            setTimeout(() => {
+                input.classList.remove("shake");
+            }, 300);
+        }
+    </script>
 
 
 </body>
