@@ -53,6 +53,48 @@
             <img src="image/about.jpg" alt="photo" />
         </div>
     </div>
+    
+    <br><br><br><br>
+
+<!-- زرار عرض المزيد -->
+<button class="show_more_btn" onclick="toggleImages()" id="toggleBtn">Show More</button>
+</div>
+
+<div class="image-container">
+    <!-- الصور المخفية -->
+    <div class="more-images" id="moreImages">
+        <img src="image/1.jpg" alt="Image 1" />
+        <p>Image 1 Description</p>
+        <img src="image/2.jpg" alt="Image 2" />
+        <p>Image 2 Description</p>
+        <img src="image/3.jpg" alt="Image 3" />
+        <p>Image 3 Description</p>
+        <img src="image/4.jpg" alt="Image 4" />
+        <p>Image 4 Description</p>
+        <img src="image/5.jpg" alt="Image 5" />
+        <p>Image 5 Description</p>
+        <img src="image/6.jpg" alt="Image 6" />
+        <p>Image 6 Description</p>
+    </div>
+</div>
+
+
+<script>
+    // دالة لتبديل الصور والزرار
+    function toggleImages() {
+        const section = document.getElementById("moreImages");
+        const btn = document.getElementById("toggleBtn");
+
+        section.classList.toggle("show");
+
+        if (section.classList.contains("show")) {
+            btn.textContent = "Show Less";
+        } else {
+            btn.textContent = "Show More";
+        }
+    }
+</script>
+    
 </body>
 
 </html>
