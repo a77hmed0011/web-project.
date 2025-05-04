@@ -1,66 +1,66 @@
- /* style register  */
+        body {
+            background-image: url(../image/back.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
 
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
+        h1 {
+            text-align: center;
+            color: #f62020;
+        }
 
+        .form-group {
+            margin-bottom: 15px;
+        }
 
- body {
-    background-image: url(../image/back.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-     font-family: 'Arial', sans-serif;
-     background-color: #f5f5f5;
-     margin: 0;
-     padding: 0;
- }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
 
- .container {
-     max-width: 500px;
-     margin: 50px auto;
-     padding: 20px;
-     background: white;
-     border-radius: 8px;
-     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
- }
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
 
- h1 {
-     text-align: center;
-     color: #f62020;
- }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #1fdb11;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
 
- .form-group {
-     margin-bottom: 15px;
- }
+        button:hover {
+            background-color: #0dfc04;
+        }
 
- label {
-     display: block;
-     margin-bottom: 5px;
-     font-weight: bold;
- }
+        .login-link {
+            text-align: center;
+            margin-top: 15px;
+        }
 
- input {
-     width: 100%;
-     padding: 10px;
-     border: 1px solid #ddd;
-     border-radius: 4px;
-     box-sizing: border-box;
- }
-
- button {
-     width: 100%;
-     padding: 10px;
-     background-color: #1fdb11;
-     color: white;
-     border: none;
-     border-radius: 4px;
-     cursor: pointer;
-     font-size: 16px;
- }
-
- button:hover {
-     background-color: #0dfc04;
- }
-
- @keyframes shake {
+        @keyframes shake {
             0% {
                 transform: translateX(0);
             }
@@ -85,8 +85,3 @@
         .shake {
             animation: shake 0.3s;
         }
-
- .login-link {
-     text-align: center;
-     margin-top: 15px;
- }
