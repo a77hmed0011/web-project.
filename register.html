@@ -7,30 +7,21 @@
     <title>Create a new account</title>
     <link rel="stylesheet" href="css/register.css">
 
-
-
 </head>
 
 <body>
-
-
-
     <div class="container">
-
-
         <h1>Create a new account</h1>
 
-        <form>
-
-
+        <form id="registerForm">
             <div class="form-group">
-                <label for="name">First Name :</label>
-                <input type="text" id="name" required>
+                <label for="fname">First Name :</label>
+                <input type="text" id="fname" required>
             </div>
 
             <div class="form-group">
-                <label for="name">Last Name :</label>
-                <input type="text" id="name" required>
+                <label for="lname">Last Name :</label>
+                <input type="text" id="lname" required>
             </div>
 
             <div class="form-group">
@@ -44,7 +35,7 @@
             </div>
 
             <div class="form-group">
-                <label for="password">password :</label>
+                <label for="password">Password :</label>
                 <input type="password" id="password" required>
             </div>
 
@@ -54,27 +45,22 @@
             </div>
 
             <div><button type="submit">Sign Up</button></div>
-
         </form>
 
         <br>
 
         <div>
             <button type="submit">
-                <a href="index.html" style="color: aliceblue;
-                text-decoration: none;"> return </a>
+                <a href="index.html" style="color: aliceblue; text-decoration: none;"> return </a>
             </button>
-
         </div>
 
         <div class="login-link">
             <a href="login.html">Already have an account?</a>
         </div>
-
     </div>
 
-
-<script>
+    <script>
         const form = document.getElementById("registerForm");
 
         form.addEventListener("submit", function (e) {
@@ -132,8 +118,6 @@
             }, 300);
         }
     </script>
-
-
 </body>
 
 </html>
